@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!--
+  Adversary Wars simulation project, set in the fictional city of Adversary City.
+  City University is a fictional facility in the fictional city of Adversary
+  City. This site was built for a simulated training/CTF scenario and is not
+  intended to represent, impersonate, or harm any real university, school,
+  organization, or place.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Catalog · City University · Adversary City</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="disclaimer" content="City University and Adversary City are fictional, built for the Adversary Wars simulated training scenario. Not affiliated with, and does not depict, any real university, school, or place." />
+  <meta name="description" content="Browse City University's course catalog by department: course codes, credits, terms offered, and open seats." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none';" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='2' y='2' width='20' height='20' rx='2' fill='%236D1F2E'/%3E%3Ctext x='12' y='16.5' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='10' fill='%23FFFFFF'%3ECU%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html">
+        <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="2" fill="#6D1F2E" />
+          <text x="12" y="16.5" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="10" fill="#FFFFFF">CU</text>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">City University</span>
+          <span class="brand-sub">Adversary City · Est. 1891</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="../about/index.html">About</a></li>
+          <li><a href="../academics/index.html">Academics</a></li>
+          <li><a href="../admissions/index.html">Admissions</a></li>
+          <li><a href="../faculty/index.html">Faculty</a></li>
+          <li><a href="../campus-life/index.html">Campus Life</a></li>
+          <li><a href="../athletics/index.html">Athletics</a></li>
+          <li><a href="../news/index.html">News</a></li>
+        </ul>
+        <a class="btn btn-primary" href="../admissions/index.html">Apply Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="wrap">
+        <h1>The course catalog.</h1>
+        <p class="lede">Six departments, sampled here. The real registrar system carries every department and updates seat counts nightly during registration weeks.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="catalog-search reveal">
+          <label for="catalog-search">Find a course or department</label>
+          <p class="catalog-search-hint">Searches this sample catalog only. Try "CS", "Psychology", or "HIST 230".</p>
+          <div class="catalog-search-row">
+            <input type="text" id="catalog-search" placeholder="Search courses and departments" />
+            <button type="button" class="btn btn-primary" id="catalog-search-btn">Search</button>
+          </div>
+          <p class="catalog-search-note" id="catalog-search-note" role="status"></p>
+        </div>
+
+        <div class="catalog-drawer reveal">
+            <div class="catalog-label">
+              <span class="catalog-label-text">Courses · Fall 2026 · Vol. II</span>
+              <span class="catalog-label-demo">Demonstration Data</span>
+            </div>
+
+            <ul class="guide-tabs" role="tablist" aria-label="Filter courses by department">
+              <li class="guide-tab is-active" data-dept="CS" role="tab" aria-selected="true" tabindex="0">CS</li>
+              <li class="guide-tab" data-dept="BUS" role="tab" aria-selected="false" tabindex="0">BUS</li>
+              <li class="guide-tab" data-dept="BIO" role="tab" aria-selected="false" tabindex="0">BIO</li>
+              <li class="guide-tab" data-dept="HIST" role="tab" aria-selected="false" tabindex="0">HIST</li>
+              <li class="guide-tab" data-dept="ENG" role="tab" aria-selected="false" tabindex="0">ENG</li>
+              <li class="guide-tab" data-dept="PSY" role="tab" aria-selected="false" tabindex="0">PSY</li>
+            </ul>
+
+            <div class="index-cards">
+              <div class="index-card is-shown" data-dept="CS">
+                <span class="index-card-code">CS 101</span>
+                <h3 class="index-card-title">Introduction to Programming</h3>
+                <div class="index-card-meta"><span>3 credits · Fall/Spring</span><span class="index-card-seats">12/30 open</span></div>
+              </div>
+              <div class="index-card is-shown" data-dept="CS">
+                <span class="index-card-code">CS 220</span>
+                <h3 class="index-card-title">Data Structures</h3>
+                <div class="index-card-meta"><span>4 credits · Fall</span><span class="index-card-seats">4/28 open</span></div>
+              </div>
+              <div class="index-card is-shown" data-dept="CS">
+                <span class="index-card-code">CS 410</span>
+                <h3 class="index-card-title">Robotics &amp; Automation Lab</h3>
+                <div class="index-card-meta"><span>3 credits · Spring</span><span class="index-card-seats is-full">Full · Waitlist</span></div>
+              </div>
+
+              <div class="index-card" data-dept="BUS">
+                <span class="index-card-code">BUS 101</span>
+                <h3 class="index-card-title">Principles of Management</h3>
+                <div class="index-card-meta"><span>3 credits · Fall/Spring</span><span class="index-card-seats">20/40 open</span></div>
+              </div>
+              <div class="index-card" data-dept="BUS">
+                <span class="index-card-code">BUS 250</span>
+                <h3 class="index-card-title">Entrepreneurship Studio I</h3>
+                <div class="index-card-meta"><span>3 credits · Fall</span><span class="index-card-seats">6/20 open</span></div>
+              </div>
+              <div class="index-card" data-dept="BUS">
+                <span class="index-card-code">BUS 340</span>
+                <h3 class="index-card-title">Marketing Analytics</h3>
+                <div class="index-card-meta"><span>3 credits · Spring</span><span class="index-card-seats is-full">Full · Waitlist</span></div>
+              </div>
+
+              <div class="index-card" data-dept="BIO">
+                <span class="index-card-code">BIO 101</span>
+                <h3 class="index-card-title">General Biology I</h3>
+                <div class="index-card-meta"><span>4 credits · Fall/Spring</span><span class="index-card-seats">15/32 open</span></div>
+              </div>
+              <div class="index-card" data-dept="BIO">
+                <span class="index-card-code">BIO 240</span>
+                <h3 class="index-card-title">Human Anatomy &amp; Physiology</h3>
+                <div class="index-card-meta"><span>4 credits · Fall</span><span class="index-card-seats">3/24 open</span></div>
+              </div>
+              <div class="index-card" data-dept="BIO">
+                <span class="index-card-code">BIO 415</span>
+                <h3 class="index-card-title">Field Ecology</h3>
+                <div class="index-card-meta"><span>3 credits · Summer</span><span class="index-card-seats">8/16 open</span></div>
+              </div>
+
+              <div class="index-card" data-dept="HIST">
+                <span class="index-card-code">HIST 101</span>
+                <h3 class="index-card-title">World History to 1500</h3>
+                <div class="index-card-meta"><span>3 credits · Fall/Spring</span><span class="index-card-seats">18/35 open</span></div>
+              </div>
+              <div class="index-card" data-dept="HIST">
+                <span class="index-card-code">HIST 230</span>
+                <h3 class="index-card-title">Adversary City: An Urban History</h3>
+                <div class="index-card-meta"><span>3 credits · Fall</span><span class="index-card-seats">10/25 open</span></div>
+              </div>
+              <div class="index-card" data-dept="HIST">
+                <span class="index-card-code">HIST 401</span>
+                <h3 class="index-card-title">Senior Research Seminar</h3>
+                <div class="index-card-meta"><span>3 credits · Spring</span><span class="index-card-seats">2/15 open</span></div>
+              </div>
+
+              <div class="index-card" data-dept="ENG">
+                <span class="index-card-code">ENG 101</span>
+                <h3 class="index-card-title">Composition I</h3>
+                <div class="index-card-meta"><span>3 credits · Fall/Spring</span><span class="index-card-seats">22/35 open</span></div>
+              </div>
+              <div class="index-card" data-dept="ENG">
+                <span class="index-card-code">ENG 215</span>
+                <h3 class="index-card-title">Introduction to Creative Writing</h3>
+                <div class="index-card-meta"><span>3 credits · Fall</span><span class="index-card-seats">5/20 open</span></div>
+              </div>
+              <div class="index-card" data-dept="ENG">
+                <span class="index-card-code">ENG 340</span>
+                <h3 class="index-card-title">Adversary City Literature</h3>
+                <div class="index-card-meta"><span>3 credits · Spring</span><span class="index-card-seats">12/24 open</span></div>
+              </div>
+
+              <div class="index-card" data-dept="PSY">
+                <span class="index-card-code">PSY 101</span>
+                <h3 class="index-card-title">Introduction to Psychology</h3>
+                <div class="index-card-meta"><span>3 credits · Fall/Spring</span><span class="index-card-seats">30/60 open</span></div>
+              </div>
+              <div class="index-card" data-dept="PSY">
+                <span class="index-card-code">PSY 250</span>
+                <h3 class="index-card-title">Developmental Psychology</h3>
+                <div class="index-card-meta"><span>3 credits · Fall</span><span class="index-card-seats">8/28 open</span></div>
+              </div>
+              <div class="index-card" data-dept="PSY">
+                <span class="index-card-code">PSY 410</span>
+                <h3 class="index-card-title">Community Mental Health Practicum</h3>
+                <div class="index-card-meta"><span>3 credits · Spring</span><span class="index-card-seats is-full">Full · Waitlist</span></div>
+              </div>
+            </div>
+
+            <p class="catalog-foot">Sample listings shown for the Adversary Wars simulation. Seat counts update nightly in the real registrar system.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>From advising hold to a locked schedule.</h2>
+        </div>
+
+        <ol class="step-list reveal">
+          <li class="step-item">
+            <span class="step-number">01</span>
+            <div>
+              <h3>Meet with your academic advisor</h3>
+              <p>An advising hold blocks registration until you've met with your advisor and reviewed your degree audit.</p>
+            </div>
+          </li>
+          <li class="step-item">
+            <span class="step-number">02</span>
+            <div>
+              <h3>Get your registration window</h3>
+              <p>Windows open by class standing, seniors first, so students closest to graduation get first pick of seats.</p>
+            </div>
+          </li>
+          <li class="step-item">
+            <span class="step-number">03</span>
+            <div>
+              <h3>Register</h3>
+              <p>Add courses directly through the registrar system once your window opens. Full sections offer a waitlist.</p>
+            </div>
+          </li>
+          <li class="step-item">
+            <span class="step-number">04</span>
+            <div>
+              <h3>Add or drop by the deadline</h3>
+              <p>Schedules lock two weeks into the term. Drops after that date require a signed withdrawal form.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Where these courses live.</h2>
+        </div>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="../academics/index.html">See Colleges &amp; Programs</a>
+          <a class="btn btn-secondary" href="../faculty/index.html">Meet the Faculty</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-top">
+            <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="2" fill="#6D1F2E" />
+              <text x="12" y="16.5" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="10" fill="#FFFFFF">CU</text>
+            </svg>
+            <span class="brand-name brand-name-invert">City University</span>
+          </div>
+          <p>A public research university in Adversary City, training students across six colleges since 1891.</p>
+          <p class="disclaimer">City University and Adversary City are fictional. This site is part of the Adversary Wars simulated training scenario and is not affiliated with, and does not depict, any real university, school, or place.</p>
+        </div>
+
+        <div>
+          <h3>Academics</h3>
+          <ul>
+            <li><a href="../about/index.html">About the University</a></li>
+            <li><a href="../academics/index.html">Colleges &amp; Programs</a></li>
+            <li><a href="../admissions/index.html">Admissions</a></li>
+            <li><a href="index.html">Course Catalog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Campus</h3>
+          <ul>
+            <li><a href="../faculty/index.html">Faculty</a></li>
+            <li><a href="../campus-life/index.html">Campus Life</a></li>
+            <li><a href="../athletics/index.html">Athletics</a></li>
+            <li><a href="../news/index.html">News</a></li>
+            <li><a href="../index.html#giving">Giving &amp; Initiatives</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="../index.html#contact">Location &amp; Hours</a></li>
+            <li><a href="../index.html#request-info">Request Information</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> City University, Adversary City (fictional).</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+</body>
+</html>

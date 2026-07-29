@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<!--
+  Adversary Wars simulation project, set in the fictional city of Adversary City.
+  City University is a fictional facility in the fictional city of Adversary
+  City. This site was built for a simulated training/CTF scenario and is not
+  intended to represent, impersonate, or harm any real university, school,
+  organization, or place.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>City University · Adversary City</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="disclaimer" content="City University and Adversary City are fictional, built for the Adversary Wars simulated training scenario. Not affiliated with, and does not depict, any real university, school, or place." />
+  <meta name="description" content="City University in Adversary City: six colleges, 24,600 students, and the public course catalog, admissions process, and campus life of a fictional public research university." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none';" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='2' y='2' width='20' height='20' rx='2' fill='%236D1F2E'/%3E%3Ctext x='12' y='16.5' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='10' fill='%23FFFFFF'%3ECU%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="2" fill="#6D1F2E" />
+          <text x="12" y="16.5" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="10" fill="#FFFFFF">CU</text>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">City University</span>
+          <span class="brand-sub">Adversary City · Est. 1891</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="about/index.html">About</a></li>
+          <li><a href="academics/index.html">Academics</a></li>
+          <li><a href="admissions/index.html">Admissions</a></li>
+          <li><a href="faculty/index.html">Faculty</a></li>
+          <li><a href="campus-life/index.html">Campus Life</a></li>
+          <li><a href="athletics/index.html">Athletics</a></li>
+          <li><a href="news/index.html">News</a></li>
+        </ul>
+        <a class="btn btn-primary" href="admissions/index.html">Apply Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <h1>Founded in 1891 to train the people who run this city.</h1>
+        <p class="lede">Six colleges, 24,600 students, and a public course catalog anyone can browse. City University runs on need-based aid, a 16:1 student-faculty ratio, and a research mission tied to Adversary City itself.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#catalog">Browse the Course Catalog</a>
+          <a class="btn btn-secondary btn-on-dark" href="admissions/index.html">Apply Now</a>
+        </div>
+        <p class="hero-credential">Dr. Leslie Knope, 14th President of City University · Founded 1891</p>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-value">24,600</span>
+            <span class="hero-stat-label">Students Enrolled</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-value">6</span>
+            <span class="hero-stat-label">Colleges &amp; Schools</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-value">58%</span>
+            <span class="hero-stat-label">Acceptance Rate</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-value">16:1</span>
+            <span class="hero-stat-label">Student:Faculty Ratio</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="find-your-path" aria-labelledby="audience-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2 id="audience-heading">Who are you visiting as?</h2>
+        </div>
+
+        <div class="audience-grid reveal">
+          <a class="audience-tile" href="admissions/index.html">
+            <h3>Prospective Students</h3>
+            <p>Admissions requirements, deadlines, tuition, and financial aid.</p>
+            <span class="audience-tile-link">See Admissions</span>
+          </a>
+          <a class="audience-tile" href="catalog/index.html">
+            <h3>Current Students</h3>
+            <p>Browse the course catalog and check registration deadlines.</p>
+            <span class="audience-tile-link">Browse Catalog</span>
+          </a>
+          <a class="audience-tile" href="faculty/index.html">
+            <h3>Faculty &amp; Staff</h3>
+            <p>Directory, academic policy, and the Provost's office.</p>
+            <span class="audience-tile-link">See Faculty</span>
+          </a>
+          <a class="audience-tile" href="#giving">
+            <h3>Alumni &amp; Giving</h3>
+            <p>Support a scholarship fund or a campus initiative.</p>
+            <span class="audience-tile-link">See Giving</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <figure class="hero-frame">
+      <div class="wrap">
+        <div class="illus-frame">
+          <img src="assets/images/university.jpg" width="3840" height="2160" alt="A Gothic Revival stone courtyard with twin spires, arched windows, ivy-covered walls, and a manicured lawn." fetchpriority="high" />
+        </div>
+        <figcaption>Founders Hall, the university's original academic building at the head of Founders Walk.</figcaption>
+      </div>
+    </figure>
+
+    <section class="section" id="catalog" aria-labelledby="catalog-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2 id="catalog-heading">Browse a sample of the course catalog.</h2>
+          <p>Every course a student registers for lives in one public catalog. Pick a department below to see what's open this term.</p>
+        </div>
+
+        <div class="catalog-search reveal">
+          <label for="catalog-search">Find a course or department</label>
+          <p class="catalog-search-hint">Searches this sample catalog only. Try "CS", "Business", or "HIST 230".</p>
+          <div class="catalog-search-row">
+            <input type="text" id="catalog-search" placeholder="Search courses and departments" />
+            <button type="button" class="btn btn-primary" id="catalog-search-btn">Search</button>
+          </div>
+          <p class="catalog-search-note" id="catalog-search-note" role="status"></p>
+        </div>
+
+        <div class="catalog-drawer reveal">
+            <div class="catalog-label">
+              <span class="catalog-label-text">Courses · Fall 2026 · Vol. II</span>
+              <span class="catalog-label-demo">Demonstration Data</span>
+            </div>
+
+            <ul class="guide-tabs" role="tablist" aria-label="Filter courses by department">
+              <li class="guide-tab is-active" data-dept="CS" role="tab" aria-selected="true" tabindex="0">CS</li>
+              <li class="guide-tab" data-dept="BUS" role="tab" aria-selected="false" tabindex="0">BUS</li>
+              <li class="guide-tab" data-dept="BIO" role="tab" aria-selected="false" tabindex="0">BIO</li>
+              <li class="guide-tab" data-dept="HIST" role="tab" aria-selected="false" tabindex="0">HIST</li>
+            </ul>
+
+            <div class="index-cards">
+              <div class="index-card is-shown" data-dept="CS">
+                <span class="index-card-code">CS 101</span>
+                <h3 class="index-card-title">Introduction to Programming</h3>
+                <div class="index-card-meta"><span>3 credits · Fall/Spring</span><span class="index-card-seats">12/30 open</span></div>
+              </div>
+              <div class="index-card is-shown" data-dept="CS">
+                <span class="index-card-code">CS 220</span>
+                <h3 class="index-card-title">Data Structures</h3>
+                <div class="index-card-meta"><span>4 credits · Fall</span><span class="index-card-seats">4/28 open</span></div>
+              </div>
+              <div class="index-card is-shown" data-dept="CS">
+                <span class="index-card-code">CS 410</span>
+                <h3 class="index-card-title">Robotics &amp; Automation Lab</h3>
+                <div class="index-card-meta"><span>3 credits · Spring</span><span class="index-card-seats is-full">Full · Waitlist</span></div>
+              </div>
+
+              <div class="index-card" data-dept="BUS">
+                <span class="index-card-code">BUS 101</span>
+                <h3 class="index-card-title">Principles of Management</h3>
+                <div class="index-card-meta"><span>3 credits · Fall/Spring</span><span class="index-card-seats">20/40 open</span></div>
+              </div>
+              <div class="index-card" data-dept="BUS">
+                <span class="index-card-code">BUS 250</span>
+                <h3 class="index-card-title">Entrepreneurship Studio I</h3>
+                <div class="index-card-meta"><span>3 credits · Fall</span><span class="index-card-seats">6/20 open</span></div>
+              </div>
+              <div class="index-card" data-dept="BUS">
+                <span class="index-card-code">BUS 340</span>
+                <h3 class="index-card-title">Marketing Analytics</h3>
+                <div class="index-card-meta"><span>3 credits · Spring</span><span class="index-card-seats is-full">Full · Waitlist</span></div>
+              </div>
+
+              <div class="index-card" data-dept="BIO">
+                <span class="index-card-code">BIO 101</span>
+                <h3 class="index-card-title">General Biology I</h3>
+                <div class="index-card-meta"><span>4 credits · Fall/Spring</span><span class="index-card-seats">15/32 open</span></div>
+              </div>
+              <div class="index-card" data-dept="BIO">
+                <span class="index-card-code">BIO 240</span>
+                <h3 class="index-card-title">Human Anatomy &amp; Physiology</h3>
+                <div class="index-card-meta"><span>4 credits · Fall</span><span class="index-card-seats">3/24 open</span></div>
+              </div>
+              <div class="index-card" data-dept="BIO">
+                <span class="index-card-code">BIO 415</span>
+                <h3 class="index-card-title">Field Ecology</h3>
+                <div class="index-card-meta"><span>3 credits · Summer</span><span class="index-card-seats">8/16 open</span></div>
+              </div>
+
+              <div class="index-card" data-dept="HIST">
+                <span class="index-card-code">HIST 101</span>
+                <h3 class="index-card-title">World History to 1500</h3>
+                <div class="index-card-meta"><span>3 credits · Fall/Spring</span><span class="index-card-seats">18/35 open</span></div>
+              </div>
+              <div class="index-card" data-dept="HIST">
+                <span class="index-card-code">HIST 230</span>
+                <h3 class="index-card-title">Adversary City: An Urban History</h3>
+                <div class="index-card-meta"><span>3 credits · Fall</span><span class="index-card-seats">10/25 open</span></div>
+              </div>
+              <div class="index-card" data-dept="HIST">
+                <span class="index-card-code">HIST 401</span>
+                <h3 class="index-card-title">Senior Research Seminar</h3>
+                <div class="index-card-meta"><span>3 credits · Spring</span><span class="index-card-seats">2/15 open</span></div>
+              </div>
+            </div>
+
+            <p class="catalog-foot">Sample listings shown for the Adversary Wars simulation. Seat counts update nightly in the real registrar system.</p>
+        </div>
+        <a class="section-link" href="catalog/index.html">View the full course catalog</a>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="academics">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Six colleges, one campus.</h2>
+          <p>Every college reports to the Provost's office and shares the same general-education core. Open a college to see its dean and program count.</p>
+        </div>
+
+        <div class="accordion reveal">
+          <div class="accordion-item is-open">
+            <button class="accordion-trigger" type="button" aria-expanded="true">
+              <span class="accordion-trigger-meta">
+                College of Arts &amp; Sciences
+                <span class="accordion-trigger-dean">Dean Donna Meagle</span>
+              </span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+            </button>
+            <div class="accordion-panel">
+              <p>The university's founding college, spanning 22 departments across the humanities, sciences, and the arts.</p>
+              <dl>
+                <dt>Programs</dt><dd>42</dd>
+                <dt>Undergraduate Majors</dt><dd>34</dd>
+                <dt>Notable Program</dt><dd>Environmental Studies</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span class="accordion-trigger-meta">
+                College of Engineering
+                <span class="accordion-trigger-dean">Dean Ben Wyatt</span>
+              </span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+            </button>
+            <div class="accordion-panel">
+              <p>Six ABET-accredited majors, housed in the campus's newest research annex.</p>
+              <dl>
+                <dt>Programs</dt><dd>11</dd>
+                <dt>Undergraduate Majors</dt><dd>6</dd>
+                <dt>Notable Program</dt><dd>Robotics &amp; Automation</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span class="accordion-trigger-meta">
+                College of Business
+                <span class="accordion-trigger-dean">Dean Tom Haverford</span>
+              </span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+            </button>
+            <div class="accordion-panel">
+              <p>AACSB-accredited programs built around a growing entrepreneurship track.</p>
+              <dl>
+                <dt>Programs</dt><dd>14</dd>
+                <dt>Undergraduate Majors</dt><dd>8</dd>
+                <dt>Notable Program</dt><dd>Entrepreneurship Studio</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span class="accordion-trigger-meta">
+                College of Health Sciences
+                <span class="accordion-trigger-dean">Dean Ann Perkins</span>
+              </span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+            </button>
+            <div class="accordion-panel">
+              <p>Nursing, public health, and kinesiology, anchored by the campus health clinic.</p>
+              <dl>
+                <dt>Programs</dt><dd>9</dd>
+                <dt>Undergraduate Majors</dt><dd>5</dd>
+                <dt>Notable Program</dt><dd>Bachelor of Science in Nursing</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span class="accordion-trigger-meta">
+                School of Education
+                <span class="accordion-trigger-dean">Dean Garry Gergich</span>
+              </span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+            </button>
+            <div class="accordion-panel">
+              <p>Licensure programs for teachers and school counselors across the region.</p>
+              <dl>
+                <dt>Programs</dt><dd>7</dd>
+                <dt>Undergraduate Majors</dt><dd>3</dd>
+                <dt>Notable Program</dt><dd>Special Education Certificate</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span class="accordion-trigger-meta">
+                Graduate School
+                <span class="accordion-trigger-dean">Dean Chris Traeger</span>
+              </span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+            </button>
+            <div class="accordion-panel">
+              <p>Master's and doctoral programs drawing faculty from all five undergraduate colleges.</p>
+              <dl>
+                <dt>Programs</dt><dd>28</dd>
+                <dt>Degrees Offered</dt><dd>MA, MS, MBA, PhD</dd>
+                <dt>Notable Program</dt><dd>PhD in Public Policy</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <a class="section-link" href="academics/index.html">View all colleges &amp; programs</a>
+      </div>
+    </section>
+
+    <section class="section" id="admissions">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>How to apply.</h2>
+          <p>Four steps from application to your first day of orientation.</p>
+        </div>
+
+        <ol class="step-list reveal">
+          <li class="step-item">
+            <span class="step-number">01</span>
+            <div>
+              <h3>Submit the Universal Application</h3>
+              <p>Apply with your transcript, a short essay, and a $50 fee, waived for students who qualify.</p>
+              <span class="step-deadline">Priority: Nov 1</span>
+            </div>
+          </li>
+          <li class="step-item">
+            <span class="step-number">02</span>
+            <div>
+              <h3>Send supporting materials</h3>
+              <p>Test scores are optional. Two letters of recommendation and a counselor report complete the file.</p>
+              <span class="step-deadline">Due: Dec 15</span>
+            </div>
+          </li>
+          <li class="step-item">
+            <span class="step-number">03</span>
+            <div>
+              <h3>Admissions review</h3>
+              <p>A committee reads every application in full. Nothing here is decided by an algorithm.</p>
+              <span class="step-deadline">Decisions: Feb 1</span>
+            </div>
+          </li>
+          <li class="step-item">
+            <span class="step-number">04</span>
+            <div>
+              <h3>Enroll &amp; orientation</h3>
+              <p>Confirm your spot, register for First-Year Orientation, and meet your academic advisor.</p>
+              <span class="step-deadline">Confirm by: May 1</span>
+            </div>
+          </li>
+        </ol>
+        <a class="section-link" href="admissions/index.html">View full admissions requirements</a>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="faculty">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Faculty shaping the classroom.</h2>
+        </div>
+
+        <ul class="masthead-list reveal">
+          <li class="masthead-row">
+            <span>
+              <span class="masthead-name">Dr. Leslie Knope</span>
+              <span class="masthead-role">President</span>
+              <span class="masthead-note">Started as a City University admissions counselor in 2003 before returning as its 14th president.</span>
+            </span>
+            <span class="masthead-dept">Office of the President</span>
+          </li>
+          <li class="masthead-row">
+            <span>
+              <span class="masthead-name">Dr. Ben Wyatt</span>
+              <span class="masthead-role">Provost &amp; Dean, College of Engineering</span>
+              <span class="masthead-note">Oversees academic policy across all six colleges.</span>
+            </span>
+            <span class="masthead-dept">Office of the Provost</span>
+          </li>
+          <li class="masthead-row">
+            <span>
+              <span class="masthead-name">Dr. Jeff Winger</span>
+              <span class="masthead-role">Professor of Communication Studies</span>
+              <span class="masthead-note">Teaches Persuasive Rhetoric, the most oversubscribed course on campus.</span>
+            </span>
+            <span class="masthead-dept">Arts &amp; Sciences</span>
+          </li>
+          <li class="masthead-row">
+            <span>
+              <span class="masthead-name">Dr. Sheldon Cooper</span>
+              <span class="masthead-role">Professor of Theoretical Physics</span>
+              <span class="masthead-note">Directs the undergraduate research track in the Physics Department.</span>
+            </span>
+            <span class="masthead-dept">Engineering</span>
+          </li>
+          <li class="masthead-row">
+            <span>
+              <span class="masthead-name">Dr. Britta Perry</span>
+              <span class="masthead-role">Associate Professor of Psychology</span>
+              <span class="masthead-note">Runs the campus's community mental health clinic training program.</span>
+            </span>
+            <span class="masthead-dept">Arts &amp; Sciences</span>
+          </li>
+        </ul>
+        <a class="section-link" href="faculty/index.html">View the full faculty directory</a>
+      </div>
+    </section>
+
+    <section class="section" id="athletics">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>The City University Larks, Founders Conference.</h2>
+          <p>Athletics Director Andy Dwyer oversees 14 varsity programs. Football results below are illustrative.</p>
+        </div>
+
+        <div class="scoreboard reveal">
+          <div class="scoreboard-panel">
+            <h3>Recent Results</h3>
+            <div class="score-row"><span class="score-opponent">vs. Harrow State</span><span class="score-digits">24-17</span><span class="score-result is-win">W</span></div>
+            <div class="score-row"><span class="score-opponent">at Brindlewood Tech</span><span class="score-digits">31-14</span><span class="score-result is-win">W</span></div>
+            <div class="score-row"><span class="score-opponent">vs. Fenwick College</span><span class="score-digits">20-27</span><span class="score-result is-loss">L</span></div>
+            <div class="score-row"><span class="score-opponent">at Oldbridge University</span><span class="score-digits">45-10</span><span class="score-result is-win">W</span></div>
+          </div>
+          <div class="scoreboard-panel">
+            <h3>Upcoming Schedule</h3>
+            <div class="schedule-row"><span class="schedule-date">Sep 12</span><span class="score-opponent">vs. Marrow Valley</span></div>
+            <div class="schedule-row"><span class="schedule-date">Sep 19</span><span class="score-opponent">at Kestrel Tech</span></div>
+            <div class="schedule-row"><span class="schedule-date">Sep 26</span><span class="score-opponent">vs. Thornfield University</span></div>
+            <div class="schedule-row"><span class="schedule-date">Oct 3</span><span class="score-opponent">at Galehaven College</span></div>
+          </div>
+        </div>
+        <a class="section-link" href="athletics/index.html">View all varsity programs</a>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="campus-life">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Life outside the classroom.</h2>
+          <p>Nine residence halls, over 140 registered student organizations, and a dining hall that seats 900 at once.</p>
+        </div>
+
+        <div class="photo-duo reveal">
+          <figure>
+            <div class="illus-frame">
+              <img src="assets/images/library.jpg" width="595" height="336" loading="lazy" alt="A library interior with tall wooden bookshelves and arched doorways leading between reading rooms." />
+            </div>
+            <figcaption>Founders Library reading room, open until midnight during exam weeks.</figcaption>
+          </figure>
+          <figure>
+            <div class="illus-frame">
+              <img src="assets/images/images.jpg" width="547" height="365" loading="lazy" alt="A campus lawn crossed by diagonal walking paths and lined with trees, leading toward a building in the distance." />
+            </div>
+            <figcaption>Founders Walk, the main quad connecting the residence halls to Founders Hall.</figcaption>
+          </figure>
+        </div>
+        <a class="section-link" href="campus-life/index.html">Explore campus life</a>
+      </div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>The Campus Digest.</h2>
+          <p>News from around campus, posted by the Office of Communications.</p>
+        </div>
+
+        <div class="digest-grid reveal">
+          <div class="digest-card">
+            <span class="digest-tag">Research</span>
+            <span class="digest-date">Jul 14, 2026</span>
+            <h3>Engineering annex opens robotics lab to undergraduates</h3>
+            <p>CS 410 and ME 330 students get first access to the new automation bay.</p>
+          </div>
+          <div class="digest-card">
+            <span class="digest-tag">Admissions</span>
+            <span class="digest-date">Jun 30, 2026</span>
+            <h3>Fall applications up 9 percent over last year</h3>
+            <p>The Registrar's Office reports the largest applicant pool in university history.</p>
+          </div>
+          <div class="digest-card">
+            <span class="digest-tag">Athletics</span>
+            <span class="digest-date">Jun 18, 2026</span>
+            <h3>Larks football opens fall camp August 4</h3>
+            <p>Founders Stadium renovations finish in time for the season opener.</p>
+          </div>
+        </div>
+        <a class="section-link" href="news/index.html">Read the full campus digest</a>
+      </div>
+    </section>
+
+    <section class="section" id="giving" aria-labelledby="giving-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2 id="giving-heading">Where alumni support goes.</h2>
+        </div>
+
+        <div class="campaign-grid reveal">
+          <div class="campaign-tile">
+            <h3>Founders Scholarship Fund</h3>
+            <p>Need-based aid for Adversary City residents, funded entirely by alumni gifts.</p>
+            <a class="section-link" href="admissions/index.html#tuition-aid">See tuition &amp; aid</a>
+          </div>
+          <div class="campaign-tile">
+            <h3>Campus Sustainability Initiative</h3>
+            <p>Solar retrofits across all nine residence halls, completed in 2025.</p>
+            <a class="section-link" href="about/index.html#history">Read the history</a>
+          </div>
+          <div class="campaign-tile">
+            <h3>First-Generation Student Network</h3>
+            <p>Peer mentoring and book grants, for the 29% of the incoming class who are first-generation.</p>
+            <a class="section-link" href="campus-life/index.html#student-orgs">See student organizations</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="contact">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Contact City University.</h2>
+        </div>
+
+        <div class="two-col">
+          <div class="reveal panel-card">
+            <h3>Location &amp; Contact</h3>
+            <ul class="contact-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-6-5.2-6-10a6 6 0 1 1 12 0c0 4.8-6 10-6 10z" /><circle cx="12" cy="11" r="2.2" /></svg>
+                <address>
+                  City University<br />
+                  500 Founders Walk<br />
+                  Adversary City, AC 00000
+                </address>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 5c0 8.3 6.7 15 15 15l1-4-5-2-2 2c-2-1-4-3-5-5l2-2-2-5-4 1z" /></svg>
+                <p class="contact-numbers">
+                  Admissions Office: 555-0140<br />
+                  Registrar: 555-0141<br />
+                  Main line: 555-0142
+                </p>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3.2 2" /></svg>
+                <p class="contact-numbers">Monday to Friday, 8:00 AM to 5:00 PM<br />Closed university holidays</p>
+              </li>
+            </ul>
+            <div class="emergency-callout">
+              <strong>Prospective students:</strong> campus tours run Monday through Saturday. Schedule one through the Admissions Office before visiting.
+            </div>
+          </div>
+
+          <div class="reveal panel-card" id="request-info">
+            <h3>Request Information</h3>
+            <form id="contact-form" novalidate>
+              <p class="form-note">Demonstration form. Nothing is sent or stored when you submit.</p>
+
+              <div class="field">
+                <label for="contact-name">Full name</label>
+                <input type="text" id="contact-name" name="contact-name" autocomplete="name" required />
+              </div>
+
+              <div class="field">
+                <label for="contact-reply">Email or phone</label>
+                <input type="text" id="contact-reply" name="contact-reply" autocomplete="email" placeholder="you@example.com or 555-0100" required />
+              </div>
+
+              <div class="field">
+                <label for="contact-program">Program of interest</label>
+                <select id="contact-program" name="program">
+                  <option>College of Arts &amp; Sciences</option>
+                  <option>College of Engineering</option>
+                  <option>College of Business</option>
+                  <option>College of Health Sciences</option>
+                  <option>School of Education</option>
+                  <option>Graduate School</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="contact-message" rows="4" required></textarea>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Send Request</button>
+              <p class="confirm-panel" id="confirm-panel" role="status"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-top">
+            <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="2" fill="#6D1F2E" />
+              <text x="12" y="16.5" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="10" fill="#FFFFFF">CU</text>
+            </svg>
+            <span class="brand-name brand-name-invert">City University</span>
+          </div>
+          <p>A public research university in Adversary City, training students across six colleges since 1891.</p>
+          <p class="disclaimer">City University and Adversary City are fictional. This site is part of the Adversary Wars simulated training scenario and is not affiliated with, and does not depict, any real university, school, or place.</p>
+        </div>
+
+        <div>
+          <h3>Academics</h3>
+          <ul>
+            <li><a href="about/index.html">About the University</a></li>
+            <li><a href="academics/index.html">Colleges &amp; Programs</a></li>
+            <li><a href="admissions/index.html">Admissions</a></li>
+            <li><a href="catalog/index.html">Course Catalog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Campus</h3>
+          <ul>
+            <li><a href="faculty/index.html">Faculty</a></li>
+            <li><a href="campus-life/index.html">Campus Life</a></li>
+            <li><a href="athletics/index.html">Athletics</a></li>
+            <li><a href="news/index.html">News</a></li>
+            <li><a href="#giving">Giving &amp; Initiatives</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="index.html#contact">Location &amp; Hours</a></li>
+            <li><a href="index.html#request-info">Request Information</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> City University, Adversary City (fictional).</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
